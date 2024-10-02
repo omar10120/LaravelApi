@@ -1,0 +1,45 @@
+composer create-project laravel/laravel NAME
+
+php artisan serve
+
+php artisan migrate
+
+php artisan make:controller NAME
+
+php artisan make:migration NAME
+
+php artisan migrate
+
+php artisan make:model Student -m
+
+php artisan make:migration add_to_student_department --table=students
+
+php artisan make:migration create_products_table --create=products
+
+php artisan make:controller ProductController --resource
+
+php artisan make:controller ProductController --resource --model=Product
+
+composer require laravel/ui
+
+php artisan ui bootstrap --auth
+
+npm install && npm run dev
+
+npm run build
+
+// m -> migration / c -> controller / r -> resource -> create,read,update,delete,edit,store,show
+php artisan make:model Product -mcr
+
+
+// for str_slug()
+composer require laravel/helpers
+
+
+php artisan notification:table
+php artisan make:notification NAME
+
+// for install laravel
+composer global require laravel/installer
+// to create project
+laravel new example-app
